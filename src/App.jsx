@@ -4,26 +4,26 @@ const WHATSAPP_NUMBER_DISPLAY = "+61 403 796 776";
 const WHATSAPP_LINK = "https://wa.me/61403796776";
 const EMAIL = "bliingjewellery24@gmail.com";
 
-const featuredCategories = [
+const categories = [
   {
     title: "Earrings",
-    icon: "💎",
-    text: "From timeless studs to elegant hoops and graceful drops, designed to add sparkle to every moment.",
-  },
-  {
-    title: "Rings",
-    icon: "💍",
-    text: "Beautiful rings crafted to wrap your fingers in elegance, from everyday luxury to engagement pieces.",
-  },
-  {
-    title: "Bracelets",
-    icon: "✨",
-    text: "Elegant bracelets and tennis bracelets crafted to shine with sophistication.",
+    image: "/images/earrings/earrings02.jpg",
+    text: "Timeless studs, elegant hoops and graceful drops designed to add sparkle to every moment.",
   },
   {
     title: "Necklaces",
-    icon: "📿",
+    image: "/images/necklaces/necklace06.jpg",
     text: "A delicate touch around your neck to elevate your look with grace and brilliance.",
+  },
+  {
+    title: "Bracelets",
+    image: "/images/bracelets/bracelet03.jpg",
+    text: "Elegant bracelets crafted to shine with sophistication.",
+  },
+  {
+    title: "Rings",
+    image: "/images/rings/ring13.jpg",
+    text: "Beautiful rings for everyday luxury, gifting and special occasions.",
   },
 ];
 
@@ -33,213 +33,40 @@ const earrings = [
     title: "Diamond Hoop Earrings",
     diamonds: "0.3 ct",
     metal: "18k Yellow Gold",
-    weight: "",
-    grade: "",
     price: "AUD 1099",
+    image: "/images/earrings/hero.jpg",
   },
   {
     code: "ERD01",
     title: "Diamond Drop Earrings",
     diamonds: "0.6 ct",
     metal: "18k Yellow Gold",
-    weight: "",
-    grade: "",
     price: "AUD 1199",
+    image: "/images/earrings/earrings02.jpg",
   },
   {
     code: "ERHU02",
-    title: "White Gold Diamond Earrings",
+    title: "Diamond Hoop Earrings",
     diamonds: "0.836 ct",
-    metal: "18k White Gold",
-    weight: "1.81 gm",
-    grade: "",
+    metal: "18k Yellow Gold",
     price: "AUD 1649",
+    image: "/images/earrings/earrings03.jpg",
   },
   {
     code: "ERHO01",
-    title: "Diamond Hoop Earrings",
+    title: "Diamond Stud Earrings",
     diamonds: "1 ct",
     metal: "18k Yellow Gold",
-    weight: "",
-    grade: "",
     price: "AUD 1799",
+    image: "/images/earrings/earrings04.jpg",
   },
   {
     code: "ERD02",
-    title: "Yellow Gold Diamond Earrings",
+    title: "Diamond Hoop Earrings",
     diamonds: "1.71 ct",
     metal: "18k Yellow Gold",
-    weight: "1.84 gm",
-    grade: "",
     price: "AUD 1749",
-  },
-  {
-    code: "ERHU03",
-    title: "White Gold Diamond Earrings",
-    diamonds: "0.836 ct",
-    metal: "18k White Gold",
-    weight: "1.81 gm",
-    grade: "",
-    price: "AUD 1649",
-  },
-  {
-    code: "ERSPB01",
-    title: "Pear Diamond Studs",
-    diamonds: "2.010 ct / 2",
-    metal: "18k White Gold",
-    weight: "1.15 gm",
-    grade: "E / VVS2 / 2EX",
-    price: "AUD 1899",
-  },
-  {
-    code: "ERSSB02",
-    title: "Square Diamond Studs",
-    diamonds: "2.190 ct / 2",
-    metal: "18k White Gold",
-    weight: "1.58 gm",
-    grade: "E / VVS2 / 2EX",
-    price: "AUD 2199",
-  },
-  {
-    code: "ERSOB03",
-    title: "Oval Diamond Studs",
-    diamonds: "2.130 ct / 2",
-    metal: "18k White Gold",
-    weight: "1.41 gm",
-    grade: "D / VS1 / 2EX",
-    price: "AUD 2349",
-  },
-  {
-    code: "ERSHB04",
-    title: "Heart Diamond Studs",
-    diamonds: "Main 1.014 ct / 2, Small 0.262 ct",
-    metal: "18k White Gold",
-    weight: "1.75 gm",
-    grade: "",
-    price: "AUD 2099",
-  },
-  {
-    code: "ERD02",
-    title: "White Gold Diamond Earrings",
-    diamonds: "1.392 ct",
-    metal: "18k White Gold",
-    weight: "1.89 gm",
-    grade: "",
-    price: "AUD 2069",
-  },
-  {
-    code: "ERD03",
-    title: "Yellow Gold Diamond Earrings",
-    diamonds: "1.392 ct",
-    metal: "18k Yellow Gold",
-    weight: "1.45 gm",
-    grade: "",
-    price: "AUD 2159",
-  },
-  {
-    code: "ERSRB05",
-    title: "Diamond Stud Earrings",
-    diamonds: "2.190 ct / 2",
-    metal: "18k White Gold",
-    weight: "1.58 gm",
-    grade: "E / VVS2 / 2EX",
-    price: "AUD 2199",
-  },
-  {
-    code: "ERHU04",
-    title: "Diamond Hoop Earrings",
-    diamonds: "Main 1.049 ct / 2, Small 0.860 ct / 4",
-    metal: "18k White Gold",
-    weight: "2.95 gm",
-    grade: "",
-    price: "AUD 2499",
-  },
-  {
-    code: "ERSRB06",
-    title: "Premium Diamond Stud Earrings",
-    diamonds: "2.140 ct / 2",
-    metal: "18k White Gold",
-    weight: "1.71 gm",
-    grade: "D / VVS2 / ID / 2EX",
-    price: "AUD 2879",
-  },
-  {
-    code: "ERD05",
-    title: "Premium Diamond Earrings",
-    diamonds: "2.478 ct",
-    metal: "18k White Gold",
-    weight: "3.39 gm",
-    grade: "",
-    price: "AUD 3599",
-  },
-  {
-    code: "ERHOR02",
-    title: "Round Diamond Earrings",
-    diamonds: "1.43 ct / 14",
-    metal: "18k Yellow Gold",
-    weight: "3.26 gm",
-    grade: "",
-    price: "AUD 2679",
-  },
-  {
-    code: "ERHOO03",
-    title: "Oval Diamond Earrings",
-    diamonds: "1.6 ct / 18",
-    metal: "18k Yellow Gold",
-    weight: "2.95 gm",
-    grade: "",
-    price: "AUD 2899",
-  },
-  {
-    code: "ERHOH04",
-    title: "Heart Diamond Earrings",
-    diamonds: "1.498 ct / 16",
-    metal: "18k Yellow Gold",
-    weight: "3.38 gm",
-    grade: "",
-    price: "AUD 3299",
-  },
-  {
-    code: "ERD04",
-    title: "Platinum Diamond Earrings",
-    diamonds: "2.548 ct",
-    metal: "Platinum",
-    weight: "3.91 gm",
-    grade: "",
-    price: "AUD 3599",
-  },
-];
-
-const studs = [
-  {
-    title: "0.4 ct Diamond Studs",
-    details: "Available in Yellow Gold, White Gold or Rose Gold",
-    price: "AUD 519",
-  },
-  {
-    title: "0.6 ct Diamond Studs",
-    details: "Available in Yellow Gold, White Gold or Rose Gold",
-    price: "AUD 649",
-  },
-  {
-    title: "0.6 ct Diamond Studs",
-    details: "Available in Yellow Gold, White Gold or Rose Gold",
-    price: "AUD 679",
-  },
-  {
-    title: "0.6 ct Diamond Studs",
-    details: "Available in Yellow Gold, White Gold or Rose Gold",
-    price: "AUD 789",
-  },
-  {
-    title: "0.6 ct Diamond Studs",
-    details: "Available in Yellow Gold, White Gold or Rose Gold",
-    price: "AUD 819",
-  },
-  {
-    title: "Approx. 2 ct Stud Options",
-    details: "All studs in this range are approximately 2 ct",
-    price: "From AUD 1689",
+    image: "/images/earrings/earrings05.jpg",
   },
 ];
 
@@ -251,6 +78,7 @@ const necklaces = [
     metal: "18k Yellow Gold",
     weight: "1.63 g",
     price: "AUD 2500",
+    image: "/images/necklaces/necklace06.jpg",
   },
   {
     code: "NECKLACE",
@@ -259,22 +87,31 @@ const necklaces = [
     metal: "18k Yellow Gold",
     weight: "3.15 g",
     price: "AUD 3080",
+    image: "/images/necklaces/necklace07.jpg",
   },
   {
     code: "NECKLACE",
-    title: "Custom Necklace",
+    title: "Custom Diamond Necklace",
     diamonds: "Contact us for details",
     metal: "Available on request",
-    weight: "Available on request",
     price: "Contact us",
+    image: "/images/necklaces/necklace08.jpg",
   },
   {
     code: "NECKLACE",
     title: "Pendant Necklace",
     diamonds: "Contact us for details",
     metal: "Available on request",
-    weight: "Available on request",
     price: "Contact us",
+    image: "/images/necklaces/necklace09.jpg",
+  },
+  {
+    code: "NECKLACE",
+    title: "Elegant Chain Necklace",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/necklaces/necklace10.jpg",
   },
 ];
 
@@ -286,6 +123,7 @@ const bracelets = [
     metal: "18k Yellow Gold",
     weight: "2.39 gm",
     price: "AUD 2200",
+    image: "/images/bracelets/bracelet03.jpg",
   },
   {
     code: "BRACELET",
@@ -294,61 +132,175 @@ const bracelets = [
     metal: "18k Yellow Gold",
     weight: "3.31 gm",
     price: "Contact us",
+    image: "/images/bracelets/bracelet06.jpg",
   },
   {
-    code: "BRACELETS",
-    title: "Different Shape Bracelets",
-    diamonds: "Available in multiple shapes",
-    metal: "Contact us for details",
-    weight: "Contact us",
+    code: "BRACELET",
+    title: "Diamond Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
     price: "Contact us",
+    image: "/images/bracelets/bracelet24.jpg",
   },
   {
-    code: "TENNIS BRACELETS",
-    title: "Round Diamond Tennis Bracelets",
-    diamonds: "Available in multiple options",
-    metal: "Contact us for details",
-    weight: "Contact us",
+    code: "BRACELET",
+    title: "Elegant Diamond Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
     price: "Contact us",
+    image: "/images/bracelets/bracelet25.jpg",
+  },
+  {
+    code: "BRACELET",
+    title: "Fine Diamond Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/bracelets/bracelet26.jpg",
+  },
+  {
+    code: "BRACELET",
+    title: "Luxury Diamond Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/bracelets/bracelet27.jpg",
+  },
+];
+
+const tennisBracelets = [
+  {
+    code: "TENNIS BRACELET",
+    title: "Round Diamond Tennis Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/tennis-bracelets/tennis09.jpg",
+  },
+  {
+    code: "TENNIS BRACELET",
+    title: "Classic Tennis Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/tennis-bracelets/tennis13.jpg",
+  },
+  {
+    code: "TENNIS BRACELET",
+    title: "Fine Diamond Tennis Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/tennis-bracelets/tennis16.jpg",
+  },
+  {
+    code: "TENNIS BRACELET",
+    title: "Luxury Tennis Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/tennis-bracelets/tennis19.jpg",
+  },
+  {
+    code: "TENNIS BRACELET",
+    title: "Elegant Tennis Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/tennis-bracelets/tennis20.jpg",
+  },
+  {
+    code: "TENNIS BRACELET",
+    title: "Premium Tennis Bracelet",
+    diamonds: "Contact us for details",
+    metal: "Available on request",
+    price: "Contact us",
+    image: "/images/tennis-bracelets/tennis21.jpg",
   },
 ];
 
 const rings = [
   {
+    code: "RING",
     title: "Classic Diamond Ring",
     details: "Available on request",
     price: "Contact us",
+    image: "/images/rings/ring13.jpg",
   },
   {
+    code: "RING",
     title: "Everyday Luxury Ring",
     details: "Contact us for more details",
     price: "Contact us",
+    image: "/images/rings/ring15.jpg",
   },
   {
+    code: "RING",
     title: "Diamond Band Ring",
     details: "Contact us for more details",
     price: "Contact us",
+    image: "/images/rings/ring17.png",
   },
   {
+    code: "RING",
     title: "Engagement Style Ring",
     details: "Customisation available",
     price: "Contact us",
+    image: "/images/rings/ring21.jpg",
+  },
+  {
+    code: "RING",
+    title: "Elegant Diamond Ring",
+    details: "Available on request",
+    price: "Contact us",
+    image: "/images/rings/ring23.jpg",
   },
 ];
 
 function getWhatsAppProductLink(item) {
-  const message = `Hi Bliing, I am interested in ${item.code ? item.code + " - " : ""}${item.title}. Please share more details.`;
+  const message = `Hi Bliing, I am interested in ${
+    item.code ? item.code + " - " : ""
+  }${item.title}. Please share more details.`;
+
   return `${WHATSAPP_LINK}?text=${encodeURIComponent(message)}`;
 }
 
-function ProductCard({ item, icon }) {
+function JewelleryImage({ src, alt, fallback = "💎" }) {
   return (
-    <div className="product-card">
-      <div className="product-image">{icon}</div>
+    <div className="jewellery-image">
+      <span className="fallback">{fallback}</span>
+      {src && (
+        <img
+          src={src}
+          alt={alt}
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+          }}
+        />
+      )}
+    </div>
+  );
+}
 
-      <div className="product-content">
+function SectionTitle({ label, title, text, dark = false }) {
+  return (
+    <div className="section-title">
+      <p className={dark ? "eyebrow light" : "eyebrow"}>{label}</p>
+      <h2>{title}</h2>
+      {text && <p>{text}</p>}
+    </div>
+  );
+}
+
+function ProductCard({ item, fallback }) {
+  return (
+    <article className="product-card">
+      <div className="product-photo">
+        <JewelleryImage src={item.image} alt={item.title} fallback={fallback} />
+      </div>
+
+      <div className="product-info">
         <p className="product-code">{item.code || "BLIIING"}</p>
-
         <h3>{item.title}</h3>
 
         {item.diamonds && (
@@ -369,36 +321,40 @@ function ProductCard({ item, icon }) {
           </p>
         )}
 
-        {item.grade && (
-          <p>
-            <strong>Grade:</strong> {item.grade}
-          </p>
-        )}
-
         {item.details && <p>{item.details}</p>}
 
-        <div className="price">{item.price || "Contact us"}</div>
+        <div className="price">{item.price}</div>
 
         <a
           href={getWhatsAppProductLink(item)}
           target="_blank"
           rel="noreferrer"
-          className="enquire-link"
+          className="enquire-button"
         >
           Enquire on WhatsApp
         </a>
       </div>
-    </div>
+    </article>
   );
 }
 
-function SectionTitle({ small, title, text }) {
+function ProductSection({ id, label, title, text, items, fallback, dark = false }) {
   return (
-    <div className="section-title">
-      <p className="small-title">{small}</p>
-      <h2>{title}</h2>
-      {text && <p className="section-text">{text}</p>}
-    </div>
+    <section id={id} className={dark ? "section dark-section" : "section"}>
+      <div className="container">
+        <SectionTitle label={label} title={title} text={text} dark={dark} />
+
+        <div className="product-grid">
+          {items.map((item, index) => (
+            <ProductCard
+              key={`${item.title}-${index}`}
+              item={item}
+              fallback={fallback}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -430,27 +386,28 @@ function App() {
           top: 0;
           left: 0;
           width: 100%;
-          z-index: 50;
-          background: rgba(247, 239, 227, 0.94);
-          backdrop-filter: blur(12px);
+          z-index: 100;
+          background: rgba(247, 239, 227, 0.95);
           border-bottom: 1px solid rgba(31, 26, 23, 0.12);
+          backdrop-filter: blur(14px);
         }
 
         .nav-inner {
-          max-width: 1220px;
+          max-width: 1240px;
           margin: 0 auto;
           padding: 18px 24px;
           display: flex;
-          align-items: center;
           justify-content: space-between;
+          align-items: center;
           gap: 24px;
         }
 
         .logo {
-          color: #1f1a17;
           font-size: 30px;
-          font-weight: 700;
+          font-weight: 800;
           letter-spacing: 8px;
+          color: #1f1a17;
+          white-space: nowrap;
         }
 
         .gold {
@@ -459,21 +416,22 @@ function App() {
 
         .nav-links {
           display: flex;
-          gap: 26px;
+          gap: 18px;
+          align-items: center;
         }
 
         .nav-links a {
-          color: #1f1a17;
-          font-size: 13px;
+          font-size: 12px;
           text-transform: uppercase;
-          letter-spacing: 2px;
+          letter-spacing: 1.5px;
+          color: #1f1a17;
         }
 
         .nav-links a:hover {
           color: #b8893a;
         }
 
-        .nav-contact {
+        .nav-button {
           background: #1f1a17;
           color: white;
           padding: 10px 18px;
@@ -482,22 +440,22 @@ function App() {
           white-space: nowrap;
         }
 
-        .nav-contact:hover {
+        .nav-button:hover {
           background: #b8893a;
         }
 
         .hero {
           min-height: 100vh;
           padding: 130px 24px 80px;
+          background:
+            radial-gradient(circle at top right, rgba(184, 137, 58, 0.23), transparent 34%),
+            linear-gradient(135deg, #f7efe3, #ead8bc);
           display: flex;
           align-items: center;
-          background:
-            radial-gradient(circle at top right, rgba(184, 137, 58, 0.24), transparent 32%),
-            linear-gradient(135deg, #f7efe3, #ead8bc);
         }
 
         .hero-inner {
-          max-width: 1220px;
+          max-width: 1240px;
           margin: 0 auto;
           display: grid;
           grid-template-columns: 1.05fr 0.95fr;
@@ -505,13 +463,17 @@ function App() {
           align-items: center;
         }
 
-        .small-title {
+        .eyebrow {
           margin: 0 0 16px;
           color: #9a7130;
-          font-size: 13px;
           text-transform: uppercase;
           letter-spacing: 4px;
-          font-weight: 700;
+          font-size: 13px;
+          font-weight: 800;
+        }
+
+        .eyebrow.light {
+          color: #d8ae67;
         }
 
         h1 {
@@ -522,14 +484,14 @@ function App() {
         }
 
         .hero-text {
-          max-width: 620px;
           margin-top: 24px;
+          max-width: 620px;
           color: rgba(31, 26, 23, 0.72);
           font-size: 19px;
           line-height: 1.8;
         }
 
-        .hero-buttons {
+        .hero-actions {
           display: flex;
           gap: 16px;
           flex-wrap: wrap;
@@ -554,50 +516,58 @@ function App() {
         }
 
         .secondary-button {
-          border: 1px solid #1f1a17;
           color: #1f1a17;
+          border: 1px solid #1f1a17;
         }
 
         .secondary-button:hover {
-          border-color: #b8893a;
           color: #b8893a;
+          border-color: #b8893a;
         }
 
         .hero-card {
-          background: rgba(255,255,255,0.55);
-          border: 1px solid rgba(184, 137, 58, 0.28);
+          padding: 24px;
           border-radius: 36px;
-          padding: 28px;
+          background: rgba(255, 255, 255, 0.55);
+          border: 1px solid rgba(184, 137, 58, 0.28);
           box-shadow: 0 30px 80px rgba(31, 26, 23, 0.16);
         }
 
-        .hero-card-inner {
-          min-height: 470px;
+        .hero-image {
+          position: relative;
+          height: 500px;
+          overflow: hidden;
           border-radius: 28px;
-          background:
-            radial-gradient(circle at center, rgba(255, 255, 255, 0.86), rgba(232, 210, 170, 0.58)),
-            linear-gradient(135deg, #f8ead5, #d6b272);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          padding: 34px;
+          background: #ead8bc;
         }
 
-        .hero-icon {
-          font-size: 96px;
+        .hero-image .jewellery-image {
+          height: 100%;
         }
 
-        .hero-card h2 {
-          margin: 16px 0 8px;
-          font-size: 44px;
-          letter-spacing: 7px;
+        .hero-overlay {
+          position: absolute;
+          left: 24px;
+          right: 24px;
+          bottom: 24px;
+          padding: 20px;
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.84);
+          backdrop-filter: blur(12px);
+          box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
         }
 
-        .hero-card p {
+        .hero-overlay h2 {
+          margin: 0 0 6px;
+          font-size: 32px;
+          letter-spacing: 6px;
+        }
+
+        .hero-overlay p {
           margin: 0;
-          color: rgba(31, 26, 23, 0.68);
-          line-height: 1.6;
+          color: rgba(31, 26, 23, 0.7);
+          font-size: 14px;
+          line-height: 1.5;
         }
 
         .section {
@@ -605,179 +575,75 @@ function App() {
         }
 
         .container {
-          max-width: 1220px;
+          max-width: 1240px;
           margin: 0 auto;
         }
 
         .section-title {
-          max-width: 760px;
-          margin-bottom: 42px;
+          max-width: 780px;
+          margin-bottom: 44px;
         }
 
         .section-title h2,
-        .section-title-main {
+        .contact-title {
           margin: 0;
           font-size: 50px;
           line-height: 1.05;
         }
 
-        .section-text {
+        .section-title p:not(.eyebrow) {
           margin-top: 18px;
           color: rgba(31, 26, 23, 0.68);
           font-size: 17px;
           line-height: 1.8;
         }
 
-        .intro-grid {
+        .dark-section {
+          background: #1f1a17;
+          color: white;
+        }
+
+        .dark-section .section-title p:not(.eyebrow) {
+          color: rgba(255, 255, 255, 0.68);
+        }
+
+        .category-grid {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           gap: 24px;
         }
 
         .category-card {
-          background: rgba(255,255,255,0.72);
-          border: 1px solid rgba(31, 26, 23, 0.08);
-          padding: 28px;
+          overflow: hidden;
           border-radius: 28px;
+          background: rgba(255, 255, 255, 0.78);
+          border: 1px solid rgba(31, 26, 23, 0.08);
           box-shadow: 0 16px 38px rgba(31, 26, 23, 0.06);
         }
 
-        .category-icon {
-          width: 78px;
-          height: 78px;
-          border-radius: 22px;
-          background: rgba(184, 137, 58, 0.14);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 38px;
-          margin-bottom: 22px;
+        .category-photo {
+          height: 230px;
+          background: #ead8bc;
         }
 
-        .category-card h3 {
+        .category-photo .jewellery-image {
+          height: 100%;
+        }
+
+        .category-content {
+          padding: 24px;
+        }
+
+        .category-content h3 {
           margin: 0 0 12px;
           font-size: 25px;
         }
 
-        .category-card p {
+        .category-content p {
           margin: 0;
           color: rgba(31, 26, 23, 0.68);
-          line-height: 1.65;
           font-size: 15px;
-        }
-
-        .dark {
-          background: #1f1a17;
-          color: white;
-        }
-
-        .dark .section-text {
-          color: rgba(255,255,255,0.68);
-        }
-
-        .dark .small-title {
-          color: #d8ae67;
-        }
-
-        .product-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 24px;
-        }
-
-        .product-card {
-          background: rgba(255,255,255,0.95);
-          border-radius: 28px;
-          overflow: hidden;
-          box-shadow: 0 16px 38px rgba(31, 26, 23, 0.08);
-          border: 1px solid rgba(31, 26, 23, 0.08);
-        }
-
-        .dark .product-card {
-          background: rgba(255,255,255,0.08);
-          border: 1px solid rgba(255,255,255,0.12);
-        }
-
-        .product-image {
-          height: 210px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 70px;
-          background:
-            radial-gradient(circle at center, rgba(255,255,255,0.92), rgba(216,174,103,0.28)),
-            linear-gradient(135deg, #ead8bc, #f7efe3);
-        }
-
-        .dark .product-image {
-          background:
-            radial-gradient(circle at center, rgba(255,255,255,0.20), rgba(216,174,103,0.12)),
-            linear-gradient(135deg, rgba(255,255,255,0.09), rgba(216,174,103,0.18));
-        }
-
-        .product-content {
-          padding: 24px;
-        }
-
-        .product-code {
-          margin: 0 0 8px;
-          color: #9a7130;
-          font-size: 12px;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          font-weight: 700;
-        }
-
-        .dark .product-code {
-          color: #d8ae67;
-        }
-
-        .product-content h3 {
-          margin: 0 0 16px;
-          font-size: 21px;
-          line-height: 1.25;
-        }
-
-        .product-content p {
-          margin: 8px 0;
-          color: rgba(31, 26, 23, 0.68);
-          line-height: 1.5;
-          font-size: 14px;
-        }
-
-        .dark .product-content p {
-          color: rgba(255,255,255,0.68);
-        }
-
-        .price {
-          margin-top: 16px;
-          color: #b8893a;
-          font-size: 18px;
-          font-weight: 700;
-        }
-
-        .dark .price {
-          color: #d8ae67;
-        }
-
-        .enquire-link {
-          display: inline-block;
-          margin-top: 18px;
-          background: #1f1a17;
-          color: white;
-          padding: 10px 16px;
-          border-radius: 999px;
-          font-size: 14px;
-        }
-
-        .dark .enquire-link {
-          background: white;
-          color: #1f1a17;
-        }
-
-        .enquire-link:hover {
-          background: #b8893a;
-          color: white;
+          line-height: 1.65;
         }
 
         .notice {
@@ -789,6 +655,128 @@ function App() {
           line-height: 1.7;
         }
 
+        .product-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 28px;
+        }
+
+        .product-card {
+          overflow: hidden;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.96);
+          border: 1px solid rgba(31, 26, 23, 0.08);
+          box-shadow: 0 18px 42px rgba(31, 26, 23, 0.09);
+        }
+
+        .dark-section .product-card {
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.14);
+        }
+
+        .product-photo {
+          height: 310px;
+          background: #ead8bc;
+        }
+
+        .product-photo .jewellery-image {
+          height: 100%;
+        }
+
+        .jewellery-image {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          background:
+            radial-gradient(circle at center, rgba(255,255,255,0.85), rgba(216,174,103,0.16)),
+            linear-gradient(135deg, #f7efe3, #ead8bc);
+        }
+
+        .jewellery-image img {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          display: block;
+        }
+
+        .fallback {
+          position: absolute;
+          z-index: 1;
+          font-size: 64px;
+        }
+
+        .product-info {
+          padding: 26px;
+        }
+
+        .product-code {
+          margin: 0 0 8px;
+          color: #9a7130;
+          font-size: 12px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-weight: 800;
+        }
+
+        .dark-section .product-code {
+          color: #d8ae67;
+        }
+
+        .product-info h3 {
+          margin: 0 0 16px;
+          font-size: 23px;
+          line-height: 1.25;
+        }
+
+        .product-info p {
+          margin: 8px 0;
+          color: rgba(31, 26, 23, 0.68);
+          font-size: 14px;
+          line-height: 1.5;
+        }
+
+        .dark-section .product-info p {
+          color: rgba(255, 255, 255, 0.68);
+        }
+
+        .price {
+          margin-top: 18px;
+          color: #b8893a;
+          font-weight: 800;
+          font-size: 18px;
+        }
+
+        .dark-section .price {
+          color: #d8ae67;
+        }
+
+        .enquire-button {
+          display: inline-block;
+          margin-top: 18px;
+          padding: 11px 18px;
+          border-radius: 999px;
+          background: #1f1a17;
+          color: white;
+          font-size: 14px;
+        }
+
+        .dark-section .enquire-button {
+          background: white;
+          color: #1f1a17;
+        }
+
+        .enquire-button:hover {
+          background: #b8893a;
+          color: white;
+        }
+
         .steps {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -796,9 +784,9 @@ function App() {
         }
 
         .step-card {
-          background: white;
           padding: 30px;
           border-radius: 28px;
+          background: white;
           box-shadow: 0 16px 38px rgba(31, 26, 23, 0.07);
         }
 
@@ -809,9 +797,9 @@ function App() {
           background: #1f1a17;
           color: white;
           display: flex;
-          align-items: center;
           justify-content: center;
-          font-weight: 700;
+          align-items: center;
+          font-weight: 800;
           margin-bottom: 18px;
         }
 
@@ -826,27 +814,27 @@ function App() {
           line-height: 1.7;
         }
 
-        .contact {
+        .contact-section {
           background: linear-gradient(135deg, #ead8bc, #f7efe3);
         }
 
         .contact-box {
-          background: rgba(255,255,255,0.75);
-          border: 1px solid rgba(184, 137, 58, 0.25);
-          border-radius: 36px;
-          padding: 48px;
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 50px;
           align-items: center;
+          padding: 48px;
+          border-radius: 36px;
+          background: rgba(255,255,255,0.76);
+          border: 1px solid rgba(184, 137, 58, 0.25);
           box-shadow: 0 24px 70px rgba(31, 26, 23, 0.12);
         }
 
         .phone-number {
-          font-size: 44px;
-          font-weight: 700;
+          margin: 22px 0 10px;
           color: #1f1a17;
-          margin: 20px 0 10px;
+          font-size: 44px;
+          font-weight: 800;
         }
 
         .email-text {
@@ -858,8 +846,8 @@ function App() {
 
         .contact-actions {
           display: flex;
-          gap: 14px;
           flex-wrap: wrap;
+          gap: 14px;
         }
 
         .contact-actions a {
@@ -883,24 +871,24 @@ function App() {
         }
 
         .email-button:hover {
-          border-color: #b8893a;
           color: #b8893a;
+          border-color: #b8893a;
         }
 
         .contact-note {
           color: rgba(31, 26, 23, 0.68);
-          line-height: 1.8;
           font-size: 17px;
+          line-height: 1.8;
         }
 
         footer {
+          padding: 34px 24px;
           background: #1f1a17;
           color: white;
-          padding: 34px 24px;
         }
 
         .footer-inner {
-          max-width: 1220px;
+          max-width: 1240px;
           margin: 0 auto;
           display: flex;
           justify-content: space-between;
@@ -910,7 +898,7 @@ function App() {
 
         .footer-logo {
           font-size: 26px;
-          font-weight: 700;
+          font-weight: 800;
           letter-spacing: 7px;
         }
 
@@ -920,7 +908,11 @@ function App() {
           font-size: 14px;
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
+          .nav-links {
+            display: none;
+          }
+
           .hero-inner,
           .contact-box {
             grid-template-columns: 1fr;
@@ -930,7 +922,7 @@ function App() {
             font-size: 58px;
           }
 
-          .intro-grid,
+          .category-grid,
           .product-grid {
             grid-template-columns: repeat(2, 1fr);
           }
@@ -940,9 +932,9 @@ function App() {
           }
         }
 
-        @media (max-width: 760px) {
-          .nav-links {
-            display: none;
+        @media (max-width: 700px) {
+          .nav-inner {
+            padding: 16px;
           }
 
           .logo {
@@ -950,20 +942,16 @@ function App() {
             letter-spacing: 5px;
           }
 
-          .nav-inner {
-            padding: 16px;
-          }
-
           h1 {
             font-size: 44px;
           }
 
           .section-title h2,
-          .section-title-main {
+          .contact-title {
             font-size: 38px;
           }
 
-          .intro-grid,
+          .category-grid,
           .product-grid {
             grid-template-columns: 1fr;
           }
@@ -972,8 +960,12 @@ function App() {
             padding-top: 115px;
           }
 
-          .hero-card-inner {
-            min-height: 330px;
+          .hero-image {
+            height: 360px;
+          }
+
+          .product-photo {
+            height: 290px;
           }
 
           .phone-number {
@@ -1001,14 +993,17 @@ function App() {
             <a href="#collection">Collection</a>
             <a href="#earrings">Earrings</a>
             <a href="#necklaces">Necklaces</a>
-            <a href="#order">How to Order</a>
+            <a href="#bracelets">Bracelets</a>
+            <a href="#tennis">Tennis</a>
+            <a href="#rings">Rings</a>
+            <a href="#order">Order</a>
           </div>
 
           <a
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noreferrer"
-            className="nav-contact"
+            className="nav-button"
           >
             WhatsApp
           </a>
@@ -1018,7 +1013,7 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-inner">
           <div>
-            <p className="small-title">New Collection 2026</p>
+            <p className="eyebrow">New Collection 2026</p>
 
             <h1>Lab-grown diamond jewellery made to sparkle.</h1>
 
@@ -1028,7 +1023,7 @@ function App() {
               to bring brilliance, sophistication and affordability together.
             </p>
 
-            <div className="hero-buttons">
+            <div className="hero-actions">
               <a href="#collection" className="primary-button">
                 View Collection
               </a>
@@ -1045,9 +1040,14 @@ function App() {
           </div>
 
           <div className="hero-card">
-            <div className="hero-card-inner">
-              <div>
-                <div className="hero-icon">💎</div>
+            <div className="hero-image">
+              <JewelleryImage
+                src="/images/earrings/hero.jpg"
+                alt="Bliing jewellery"
+                fallback="💎"
+              />
+
+              <div className="hero-overlay">
                 <h2>
                   BL<span className="gold">II</span>NG
                 </h2>
@@ -1064,18 +1064,27 @@ function App() {
       <section id="collection" className="section">
         <div className="container">
           <SectionTitle
-            small="Catalogue Range"
+            label="Catalogue Range"
             title="Discover the Bliing collection."
-            text="Explore earrings, rings, bracelets and necklaces crafted for everyday luxury, special occasions and customised creations."
+            text="Explore earrings, necklaces, bracelets, tennis bracelets and rings crafted for everyday luxury, special occasions and customised creations."
           />
 
-          <div className="intro-grid">
-            {featuredCategories.map((item) => (
-              <div className="category-card" key={item.title}>
-                <div className="category-icon">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
+          <div className="category-grid">
+            {categories.map((item) => (
+              <article className="category-card" key={item.title}>
+                <div className="category-photo">
+                  <JewelleryImage
+                    src={item.image}
+                    alt={item.title}
+                    fallback="💎"
+                  />
+                </div>
+
+                <div className="category-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </article>
             ))}
           </div>
 
@@ -1087,90 +1096,58 @@ function App() {
         </div>
       </section>
 
-      <section id="earrings" className="section dark">
-        <div className="container">
-          <SectionTitle
-            small="Earrings"
-            title="Diamond earrings from the catalogue."
-            text="A curated range of hoops, drops, studs and statement earrings from Bliing’s New Collection 2026."
-          />
+      <ProductSection
+        id="earrings"
+        label="Earrings"
+        title="Diamond earrings from the catalogue."
+        text="A curated selection of Bliing earrings, including studs, hoops and drop styles."
+        items={earrings}
+        fallback="💎"
+        dark
+      />
 
-          <div className="product-grid">
-            {earrings.map((item, index) => (
-              <ProductCard key={`${item.code}-${index}`} item={item} icon="💎" />
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductSection
+        id="necklaces"
+        label="Necklaces"
+        title="A graceful touch around your neck."
+        text="Diamond necklaces and pendant styles designed to add elegance and brilliance to your look."
+        items={necklaces}
+        fallback="📿"
+      />
 
-      <section id="studs" className="section">
-        <div className="container">
-          <SectionTitle
-            small="Studs"
-            title="Diamond stud options."
-            text="Selected stud options from the catalogue, including 0.4 ct, 0.6 ct and approximately 2 ct ranges."
-          />
+      <ProductSection
+        id="bracelets"
+        label="Bracelets"
+        title="Bracelets with a polished finish."
+        text="Elegant diamond bracelets available through direct enquiry."
+        items={bracelets}
+        fallback="✨"
+        dark
+      />
 
-          <div className="product-grid">
-            {studs.map((item, index) => (
-              <ProductCard key={`${item.title}-${index}`} item={item} icon="✨" />
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductSection
+        id="tennis"
+        label="Tennis Bracelets"
+        title="Timeless tennis bracelet styles."
+        text="Round diamond tennis bracelets and fine bracelet options available by enquiry."
+        items={tennisBracelets}
+        fallback="💫"
+      />
 
-      <section id="necklaces" className="section dark">
-        <div className="container">
-          <SectionTitle
-            small="Necklaces"
-            title="A graceful touch around your neck."
-            text="Diamond necklaces and pendant styles designed to add elegance, brilliance and softness to your look."
-          />
-
-          <div className="product-grid">
-            {necklaces.map((item, index) => (
-              <ProductCard key={`${item.title}-${index}`} item={item} icon="📿" />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="bracelets" className="section">
-        <div className="container">
-          <SectionTitle
-            small="Bracelets"
-            title="Bracelets and tennis bracelets."
-            text="Elegant diamond bracelets and tennis bracelet options available through direct enquiry."
-          />
-
-          <div className="product-grid">
-            {bracelets.map((item, index) => (
-              <ProductCard key={`${item.title}-${index}`} item={item} icon="💫" />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="rings" className="section dark">
-        <div className="container">
-          <SectionTitle
-            small="Rings"
-            title="Rings crafted for elegance."
-            text="Beautiful rings from everyday luxury pieces to customised engagement-style designs. Contact Bliing for ring details and customisation."
-          />
-
-          <div className="product-grid">
-            {rings.map((item, index) => (
-              <ProductCard key={`${item.title}-${index}`} item={item} icon="💍" />
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductSection
+        id="rings"
+        label="Rings"
+        title="Rings crafted for elegance."
+        text="Beautiful rings from everyday luxury pieces to customised engagement-style designs."
+        items={rings}
+        fallback="💍"
+        dark
+      />
 
       <section id="order" className="section">
         <div className="container">
           <SectionTitle
-            small="Simple Steps to Sparkle"
+            label="Simple Steps to Sparkle"
             title="How to place an order."
             text="The process is simple: choose your design, confirm your order, and collect once your jewellery is ready."
           />
@@ -1180,7 +1157,7 @@ function App() {
               <div className="step-number">1</div>
               <h3>Choose your design</h3>
               <p>
-                Select your preferred item from the catalogue and contact us on
+                Select your preferred item from the collection and contact us on
                 WhatsApp or email.
               </p>
             </div>
@@ -1211,18 +1188,14 @@ function App() {
         </div>
       </section>
 
-      <section id="contact" className="section contact">
+      <section id="contact" className="section contact-section">
         <div className="container">
           <div className="contact-box">
             <div>
-              <p className="small-title">Place an Order</p>
-
-              <h2 className="section-title-main">
-                Contact us to place any order.
-              </h2>
+              <p className="eyebrow">Place an Order</p>
+              <h2 className="contact-title">Contact us to place any order.</h2>
 
               <div className="phone-number">{WHATSAPP_NUMBER_DISPLAY}</div>
-
               <p className="email-text">{EMAIL}</p>
 
               <div className="contact-actions">
@@ -1243,7 +1216,7 @@ function App() {
 
             <div>
               <p className="contact-note">
-                Have a design in mind? Contact Bliing with the item code,
+                Have a design in mind? Contact Bliing with the item name,
                 preferred metal colour and any customisation request. We will
                 help confirm availability, pricing and estimated delivery time.
               </p>
